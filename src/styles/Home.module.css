@@ -1,0 +1,206 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  background: #3a4045;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.search::placeholder {
+  color: antiquewhite;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.stageContainer {
+  width: 300px;
+  background-color: #5d6166;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.stageName {
+  background-color: #292621;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5bd78a;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.stageName button {
+  background: transparent;
+  border: 1px solid #60e2e6;
+  padding: 5px;
+  border-radius: 10px;
+  color: #60e2e6;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.taskList {
+  padding-top: 20px;
+  height: calc(100vh - 180px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.taskList::-webkit-scrollbar-track {
+  background: lightslategray;
+  border-radius: 2px;
+}
+
+.task {
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.task select:focus {
+  outline: none;
+}
+
+.task select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background:#292621;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.taskCardActions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.taskCardActions button {
+  padding: 5px 10px;
+  background-color: #292621;
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.taskCardActions button:focus {
+  outline: none;
+}
+
+.taskTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: darkcyan;
+  padding-bottom: 5px;
+  word-break: break-all;
+}
+
+.taskDescription {
+  word-break: break-all;
+}
+
+/* create edit task css */
+.createEditTaskWrapper {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createEditTaskForm {
+  background-color: #302f2d;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50vw;
+  min-width: 300px;
+}
+
+.createEditTaskForm input {
+  border: 1px solid white;
+  background: black;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+}
+
+.createEditTaskForm input::placeholder,
+.createEditTaskForm textarea::placeholder {
+  color: white;
+}
+
+.createEditTaskForm input:focus,
+.createEditTaskForm textarea:focus {
+  outline: none;
+}
+
+.createEditTaskForm textarea {
+  border: 1px solid white;
+  background: black;
+  padding: 10px;
+  min-height: 200px;
+  max-height: 200px;
+  color: white;
+  border-radius: 5px;
+  resize: none;
+}
+
+.createEditTaskForm button {
+  background: transparent;
+  border: 1px solid #60e2e6;
+  padding: 5px;
+  height: 30px;
+  border-radius: 10px;
+  color: #60e2e6;
+  cursor: pointer;
+  font-weight: bolder;
+  height: 40px;
+  width: 120px;
+  font-size: 18px;
+}
+
+
+.createEditTaskActions {
+  display: flex;
+  gap: 20px;
+}
+
+.createEditTaskActions button:last-child {
+  color: red;
+  border-color: red;
+}
